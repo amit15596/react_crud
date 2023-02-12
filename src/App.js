@@ -1,17 +1,19 @@
-import React from "react";
-import './App.css';
-// import Navbar from './components/layouts/Navbar';
-// import Create from './components/product/create';
-// import Main from './components/layouts';
 
+import React from 'react';
 import 'antd/dist/reset.css';
-import { BrowserRouter } from "react-router-dom";
-import Router from "./components/routers";
+import { BrowserRouter } from 'react-router-dom';
+import Router from './components/routers';
+
+import { Provider } from 'react-redux';
+import store from './redux/store';
+
 function App() {
   return (
-    <BrowserRouter>
-        <Router/>
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+    </Provider>
   );
 }
 

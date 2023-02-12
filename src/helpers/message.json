@@ -1,0 +1,6 @@
+{
+  "category_name": "Category name is required.",
+  "add_common_message": "Data added successfully!!!",
+  "update_common_message": "Data updated successfully!!!",
+  "delete_common_message": "Data deleted successfully!!!"
+}
